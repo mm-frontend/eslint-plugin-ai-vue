@@ -1,0 +1,43 @@
+{
+  "name": "@bitmain/eslint-plugin-ai-vue",
+  "version": "0.0.1",
+  "description": "Bitmain AI Project Vuejs Rules",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "xueyan.lu",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --inspect tests --recursive"
+  },
+  "dependencies": {
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "prettier": "1.16.4",
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "4",
+    "mocha": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ]
+  }
+}
