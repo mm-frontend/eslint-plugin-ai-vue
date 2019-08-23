@@ -39,7 +39,7 @@ ruleTester.run('no-proxy-comment', rule, {
                     methods: ['get', 'post'],
                 }
             ]`,
-      options: ['<input>'],
+      options: [['<input>']],
       // give me some code that won't trigger a warning
     },
     // give me some code that won't trigger a warning
@@ -60,7 +60,7 @@ ruleTester.run('no-proxy-comment', rule, {
                     methods: ['get', 'post'],
                 }
             ]`,
-      options: ['<input>'],
+      options: [['<input>']],
       errors: [
         {
           message: 'proxy property is not allowed in api.js',

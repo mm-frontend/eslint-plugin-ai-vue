@@ -28,7 +28,7 @@ var ruleTester = new RuleTester()
 ruleTester.run('unique-api-name', rule, {
   valid: [
     {
-      code: `export default [
+      code: `module.exports = [
                 {
                     name: 'users3',
                     url: '/api/users3',
@@ -52,7 +52,7 @@ ruleTester.run('unique-api-name', rule, {
   invalid: [
     {
       code: `
-          export default [
+          module.exports = [
               {
                   name: 'users',
                   url: '/api/users',
